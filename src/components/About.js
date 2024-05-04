@@ -12,7 +12,10 @@ const About = () => {
   return (
     <div className='about_container'>
 
-      {ctx.data===null ? (<h1>No Data</h1>) : (<>
+      {ctx.data===null ? ( <div className='center'>
+        <h1>No Data</h1>
+        <p>Please select the candidate</p>
+      </div> ) : (<>
       <div className="left">
 
 <div className="profile_details">
