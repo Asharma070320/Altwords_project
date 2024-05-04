@@ -87,10 +87,15 @@
     /* border-radius: 5px; */
     /* border: 2px solid rgb(49,190,91); */
 }
-.percentage_line{
+.green_line{
     width: 90%;
     border-radius: 5px;
     border: 3px solid rgb(49,190,91);
+}
+.yellow_line{
+    width: 90%;
+    border-radius: 5px;
+    border: 3px solid rgb(236,178,46);
 }
 .communcation_line{
     width: 80%;

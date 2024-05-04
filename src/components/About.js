@@ -41,9 +41,12 @@ const About = () => {
   </div>
 
   <div className="score_line">
-    <div  className='percentage_line' style={{width:`${ctx.data.behaviour*10}%`}}></div>
-    <div className="communcation_line"></div>
-    <div className="situation_line"></div>
+   {ctx.data.behaviour > "7" ? <div  className='green_line' style={{width:`${ctx.data.behaviour*10}%`}} ></div> : <div  className='yellow_line' style={{width:`${ctx.data.behaviour*10}%`}} ></div>}
+  
+   {ctx.data.communication > "7" ? <div  className='green_line' style={{width:`${ctx.data.communication*10}%`}} ></div> : <div  className='yellow_line' style={{width:`${ctx.data.behaviour*10}%`}} ></div>}
+   
+   {ctx.data.situationhandling > "7" ? <div  className='green_line' style={{width:`${ctx.data.situationhandling*10}%`}} ></div> : <div  className='yellow_line' style={{width:`${ctx.data.behaviour*10}%`}} ></div>}
+    
   </div>
 
   <div className="score_mark">
